@@ -1,0 +1,39 @@
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Password Generator & Strength Checker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+    <div class="container">
+        <h2> Password Generator</h2>
+
+         <!-- Password display -->
+          <input type="text" id="password" readonly>
+
+           <!-- Length -->
+            <label>
+            length:
+            <input type="number" id="length" value="8" min="4" max="20">
+            </label>
+
+            <!-- Options -->
+             <label> <input type="checkbox" id="uppercase"> Uppercase </label>
+             <label> <input type="checkbox" id="lowercase"> Lowercase </label>
+             <label> <input type="checkbox" id="numbers"> Numbers </label>
+             <label> <input type="checkbox" id="symbol"> Symbol </label>
+
+             <!-- Generate button -->
+              <button id="generate"> Generate Password</button>
+
+              <!-- Strength -->
+               <p id="strength"> </p>
+     </div>
+    <script src="script.js"> 
+    </script>
+    </body>
+</html>
